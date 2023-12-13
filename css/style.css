@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 75px;
+}
+
+main{
+    background-color: rgb(2, 2, 129);
+    height: 100vh - 75px;
+}
+
+.container-todo{
+    max-width: 700px;
+    background-color: white;
+    margin: 30px auto;
+}
+
+li{
+    border-bottom: 1px solid black;
+}
