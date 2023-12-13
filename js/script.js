@@ -27,7 +27,12 @@ createApp({
                     text: 'cucinare per cena',
                     done: false 
                 }
-            ]
+            ],
+        }
+    },
+    methods: {
+        remove_task(index){
+            this.todo_list.splice(index,1)
         }
     }
 }).mount("#app")

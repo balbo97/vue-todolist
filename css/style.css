@@ -22,3 +22,7 @@ main{
 li{
     border-bottom: 1px solid black;
 }
+
+button{
+    margin: 0 10px;
+}
