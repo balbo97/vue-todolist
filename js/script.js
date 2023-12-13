@@ -4,22 +4,28 @@ createApp({
         return{
             todo_list: [
                 {
-                    text: 'allenarsi'
+                    text: 'allenarsi',
+                    done: false
                 },
                 {
-                    text: 'prendere le proteine'
+                    text: 'prendere le proteine',
+                    done: false
                 },
                 {
-                    text: 'collegarsi per la lezione'
+                    text: 'collegarsi per la lezione',
+                    done: true
                 },
                 {
-                    text: 'esercitazione coding'
+                    text: 'esercitazione coding',
+                    done: true
                 },
                 {
-                    text: 'pagare la multa'
+                    text: 'pagare la multa',
+                    done: false
                 },
                 {
-                    text: 'cucinare per cena'
+                    text: 'cucinare per cena',
+                    done: false 
                 }
             ]
         }
