@@ -38,7 +38,7 @@
                                             <button class="btn btn-sm btn-square" :class="todo.done ? `btn-success` : `btn-warning`" @click="todo.done =!todo.done">
                                                 <i class="fas" :class="todo.done ? `fa-times` : `fa-check`"></i>
                                             </button>
-                                            <button class="btn btn-sm btn-square btn-danger" @click="remove_task">
+                                            <button class="btn btn-sm btn-square btn-danger" @click="remove_task(index)">
                                                 <i class="fa-solid fa-trash"></i>
                                             </button>
                                         </div>
@@ -48,7 +48,7 @@
                             <div class="p-3">
                                 <div class="row">
                                     <div class="col-9">
-                                        <input type="text" class="form-control form-control-sm" placeholder="New Task" v-model="new_task">
+                                        <input type="text" class="form-control form-control-sm" placeholder="New Task" v-model="new_task" @keyup.enter="add_newTask">
                                     </div>
                                     <div class="col-3">
                                         <button class="btn btn-sm btn-success" @click="add_newTask">Add</button>
